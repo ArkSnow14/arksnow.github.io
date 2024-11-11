@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content />
+    <meta name="description" content />
+    <meta name="author" content />
+    <link rel="shortcut icon" href="images/favicon.png" type>
+
+      <title> Delicias Chuy </title>
+
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+      <!--owl slider stylesheet -->
+      <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+      <!-- nice select  -->
+      <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+        crossorigin="anonymous" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <link href="css/checkout.css" rel="stylesheet" />
+
+      <!-- responsive style -->
+      
+
+    </head>
+
+    <body class="sub_page">
+      <div class="hero_area">
+        <div class="bg-box">
+          <img src="images/hero-bg.jpg" alt>
+        </div>
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  Delicias Chuy
+                </span>
+              </a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class> </span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mx-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="menu.html">Menu <span
+                        class="sr-only">(current)</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                  </li>
+                </ul>
+                <div class="user_option">
+                  <a href="login-register/index.php" class="user_link">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                  </a>
+                  <div class="cart_link">
+                    <svg version="1.1" id="Capa_1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 456.029 456.029"
+                      style="enable-background:new 0 0 456.029 456.029; z-index: 0;"
+                      xml:space="preserve">
+                      <g>
+                        <g>
+                          <path
+                            d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                    c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                    C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                    c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                    C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                    c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                    </svg>
+                  </div>
+                  <a href="checkout.html" class="order_online">
+                    Check Out
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- end header section -->
+      </div>
+
+  <!-- checkout section -->
+
+  <body>
+    <div class="checkout_section">
+    <div class="row">
+      <div class="col-50">
+        <div class="checkout-container">
+          <form action="login-register/php/pedido_be.php" method="POST">
+          
+            <div class="row">
+              <div class="col-50">
+
+                <!--Solicitamos los datos del envío-->
+                <h3>Detalles de envío</h3>
+                <label for="nombre"><i class="fa fa-user"></i> Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Jesús ">
+
+                <label for="correo"><i class="fa fa-envelope"></i> Correo Electrónico</label>
+                <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com ">
+
+                <label for="telefono"><i class="fa fa-phone"></i> Teléfono</label>
+                <input type="text" id="telefono" name="telefono" placeholder="844 --- ---">
+
+                <label for="salon"><i class="fa fa-home"></i> Salón</label>
+                <input type="text" id="salon" name="salon" placeholder="Salón 2">
+
+                <label for="hora"> Hora de Entrega</label>
+                <input type="text" id="hora" name="hora" placeholder="7:30 - 2:00">
+
+                <label for="repartidor"> Repartidor</label>
+                <select id="repartidor" name="repartidor">
+                  <option value="chuy">Chuy</option>
+                  <option value="sebas">Sebas</option>
+                  <option value="fabro">Fabro</option>
+                  <option value="itzel">Itzel</option>
+                  <option value="orlando">Orlando</option>
+                  <option value="edwin">Edwin</option>
+                </select>
+
+                <!--Añadí los campos para los detalles del pedido y el total-->
+                <input type="hidden" name="detalles" id="hiddenCartDetails" value="">
+                <input type="hidden" name="total" id="hiddenCartTotal" value="">
+                
+                <!--Solicitamos la información de pago-->
+                <h3>Pago</h3>
+                <label for="metodo_pago">Método de pago:</label>
+                <select id="metodo_pago" name="metodo_pago" onchange="toggleCardForm()">
+                  <option value="efectivo">Pago en efectivo</option>
+                  <option value="tarjeta">Pago con tarjeta</option>
+                  <option value="transferencia">Pago con transferencia</option>
+                </select>
+
+                <div id="card-info">
+                <label for="fname">Tarjetas aceptadas</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color:navy;"></i>
+                  <i class="fa fa-cc-amex" style="color:blue;"></i>
+                  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                  <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </div>
+                <label for="cname">Nombre en la tarjeta</label>
+                <input type="text" id="cname" name="cardname">
+                <label for="ccnum">Número de tarjeta</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <div class="row">
+                <div class="col-25">
+                <label for="expmonth">Mes de vencimiento</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="MM">
+                </div>
+                  <div class="col-25">
+                    <label for="expyear">Año de vencimiento</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="YYYY">
+                  </div>
+                  <div class="col-25">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                  </div>
+                </div>
+                </div>
+                <div id="trans-info">
+                  <label>Numero de Tarjeta:</label>
+                  <p id="textoACopiar">4152-3141-3050-8560
+                      <button type="button" onclick="copiarTexto()">
+                          <img src="images/copy.png">
+                      </button>
+                  </p>
+          
+                  <div class="inline-info">
+                      <label>Banco:</label>
+                      <span>BBVA</span>
+                  </div>
+                  
+                  <div class="inline-info">
+                      <label>Nombre en la Tarjeta:</label>
+                      <span>Jesús Espinoza Hernández</span>
+                  </div>
+              </div>
+              
+              </div>
+            </div>
+            <input type="submit" value="Continue to checkout" class="btn" onclick="localStorage.removeItem('cart'),localStorage.removeItem('customs')">
+
+          
+        </form>
+        
+        </div>
+      </div>
+      
+      <div class="col-50">
+        <!-- Añadí el contenedor del carrito-->
+        <div class="cart-container">
+          <div class="cartTab">
+            <h1>Carrito</h1>
+            <div class="listCart">
+              <div class="listCartItem">
+              </div>
+            </div>
+            <div class="cartBtn">
+              <button class="cartClose" onclick="addToCart(3)"></button>
+              <button class="cartCheckOut"></button>
+            </div>
+          </div>
+          <div class="cartTotal">
+            <div>Total:</div>
+            <div id="cartTotal">$0.00</div> <!-- Ahora el total está dentro de un div -->
+        </div>
+        
+        
+    
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+    </body>
+
+  <!-- end checkout section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>
+              Contáctanos
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +52 1 244 133 6533
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  jesusespinoza@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">
+              Delicias Chuy
+            </a>
+            <p>
+              a
+            </p>
+            <div class="footer_social">
+              <a href="https://www.facebook.com/baconest">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/jsshrnndz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>
+            Horario
+          </h4>
+          <p>
+            Lunes a Jueves
+          </p>
+          <p>
+            7:30 Am -2:00 Pm
+          </p>
+        </div>
+      </div>
+      <div class="footer-info">
+        
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="js/carapp.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

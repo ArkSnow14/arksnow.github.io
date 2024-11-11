@@ -1,0 +1,93 @@
+
+
+.table-container {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    max-height: 200px;
+}
+
+.table-container_completed select {
+    background-color: #ffffff; 
+    display: block;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 5px; 
+    width: 100%; 
+    font-size: 14px; 
+    color: #333; 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+}
+
+
+.table-container select {
+    display: block;
+    background-color: #ffffff; /* Fondo blanco para el select */
+    border: 1px solid #ccc; /* Borde del select */
+    border-radius: 4px; /* Borde redondeado */
+    padding: 5px; /* Espaciado interno */
+    width: 100%; /* Ocupa el ancho completo de la celda */
+    font-size: 14px; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    appearance: none; /* Quita el estilo predeterminado del navegador */
+    -webkit-appearance: none; /* Soporte para WebKit */
+    -moz-appearance: none; /* Soporte para Firefox */
+}
+
+.table-container_completed {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    max-height: 200px;
+}
+
+.table-container h4 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+.table-container_completed h4 {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Ajusta el ancho mínimo si es necesario */
+    min-height: 100px;
+    max-height: 200px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #444;
+    color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}

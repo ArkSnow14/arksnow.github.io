@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Torta de Salchicha",
+        "price": 50,
+        "image": "images/tortasalchicha.png"
+    },
+    {
+        "id": 2,
+        "name": "Torta de Jamón",
+        "price": 35,
+        "image": "images/tortajamon.png"
+    },
+    {
+        "id": 3,
+        "name": "Torta de Barbacoa",
+        "price": 60,
+        "image": "images/barbacoa.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Burrito de Deshebrada",
+        "price": 25,
+        "image": "images/deshebrada.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Burrito de Chicharrón",
+        "price": 25,
+        "image": "images/chicharron.png"
+    },
+    {
+        "id": 6,
+        "name": "Burrito de Discada",
+        "price": 25,
+        "image": "images/discada.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Sabritas",
+        "price": 15,
+        "image": "images/sabritas.png"
+    },
+    {
+        "id": 8,
+        "name": "Doritos",
+        "price": 15,
+        "image": "images/doritos.png"
+    },
+    {
+        "id": 9,
+        "name": "Cheetos",
+        "price": 15,
+        "image": "images/cheetos.png"
+    },
+    {
+        "id": 10,
+        "name": "Ruffles",
+        "price": 15,
+        "image": "images/ruffles.png"
+    },
+    {
+        "id": 11,
+        "name": "Marlboro Ice",
+        "price": 7,
+        "image": "images/fifosice.png"
+    },
+    {
+        "id": 12,
+        "name": "Marlboro Clavo",
+        "price": 7,
+        "image": "images/clavo.png"
+    },
+    {
+        "id": 13,
+        "name": "Combo Torta",
+        "price": 60,
+        "image": "images/combotorta.png"
+    },
+    {
+        "id": 14,
+        "name": "Combo Burritos",
+        "price": 60,
+        "image": "images/combo-burrito.png"
+    }
+]

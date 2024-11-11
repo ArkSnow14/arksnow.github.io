@@ -1,0 +1,231 @@
+
+
+.checkout-section {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.checkout-container, .cart-container {
+  flex: 1; /* Cada uno ocupará el 50% */
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.checkout-container {
+  width: 100%;
+  max-width: 600px;
+  min-width: 450px;
+  background-color: transparent; /* Color de fondo opcional */
+}
+
+.cart-container {
+  background-color: #e69c00; /* Color de fondo opcional */
+  border-radius: 1%;
+}
+
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  select{
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  } 
+  
+  #card-info {
+    overflow: hidden;           /* Oculta el contenido cuando la altura es 0 */
+    max-height: 0;              /* Altura inicial de 0 para que no sea visible */
+    transition: max-height 0.5s ease; /* Transición suave para la altura */
+  }
+  
+  /* Estilo para mostrar el formulario con el efecto de deslizamiento */
+  #card-info.show {
+    max-height: 500px; /* Aumenta este valor según la altura de tu contenido */
+  }
+
+  #trans-info {
+    overflow: hidden;           /* Oculta el contenido cuando la altura es 0 */
+    max-height: 0;              /* Altura inicial de 0 para que no sea visible */
+    transition: max-height 0.5s ease; /* Transición suave para la altura */
+  }
+  
+  /* Estilo para mostrar el formulario con el efecto de deslizamiento */
+  #trans-info.show {
+    max-height: 500px; /* Aumenta este valor según la altura de tu contenido */
+  }
+  
+   .btn {
+    background-color: #ffbe33;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+   .btn:hover{
+    background-color: #e69c00;
+  }
+
+  #trans-info button {
+    display: inline-block;
+    padding: 8px 8px;
+    background-color: #ffbe33;
+    color: #ffffff;
+    border-radius: 45px;
+    transition: all 0.3s;
+    border: none;
+}
+
+/* Estilo de la imagen dentro del botón */
+#trans-info button img {
+    width: 20px; /* Tamaño del ícono */
+    height: 20px;
+    filter: grayscale(100%); /* Hace que el ícono sea en blanco y negro */
+    transition: filter 0.3s; /* Transición suave en hover */
+}
+
+/* Efecto hover para el botón */
+#trans-info button:hover img {
+    background-color: #e69c00;
+}
+
+/* CSS */
+.inline-info {
+  display: flex;
+  gap: 5px; /* Espacio entre label y texto */
+  margin-bottom: 5px; /* Espacio inferior entre líneas */
+}
+
+ label {
+  font-weight: bold;
+}
+
+.cart-container h1 {
+  background-color: #000000;
+  color: #eee;
+  padding: 15px;
+  margin: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Lista de elementos en el carrito */
+.cart-container .listCart {
+  width: 100%;
+  margin-top: 15px;
+  overflow-y: auto;
+  max-height: 400px; /* Ajusta la altura según sea necesario */
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+/* Elementos individuales en la lista del carrito */
+.cart-container .listCart .listCartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #eee;
+}
+
+.cart-container .listCart .listCartItem img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container .listCart .listCartItem .name {
+  flex: 1;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #eee;
+  text-align: left;
+}
+
+.cart-container .listCart .listCartItem .totalPrice {
+  font-weight: bold;
+  color: #E8BC0E;
+  margin-right: 10px;
+}
+
+/* Controles de cantidad */
+.cart-container .listCart .listCartItem .itemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart-container .listCart .listCartItem .itemQuantity span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #353432;
+  background-color: #E8BC0E;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-container .listCart .listCartItem .itemQuantity span:hover {
+  background-color: #d4a507;
+}
+
+.cart-container .listCart .listCartItem .itemQuantity span:nth-child(2) {
+  width: auto;
+  background-color: transparent;
+  color: #eee;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: auto;
+}
+
+/* Total del carrito */
+.cart-container .cart-total {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+  color: #eee;
+}
+
+  

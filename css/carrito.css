@@ -1,0 +1,129 @@
+.cartTab {
+  width: 350px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  z-index: 10;
+  right: -350px; /* Mantén el carrito oculto fuera de la vista */
+  top: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: right 0.5s ease; /* Transición para un efecto de deslizamiento suave */
+}
+
+/* Mostrar el carrito cuando se aplica la clase .showCart al body */
+body.showCart .cartTab {
+  right: 0; /* Mueve el carrito dentro de la vista */
+}
+
+/* Resto del estilo del carrito */
+.cartTab h1 {
+  background-color: #000000;
+  color: #eee;
+  padding: 20px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.cartTab .cartBtn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .cartBtn button {
+  background-color: #E8BC0E;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 10px;
+  color: #353432;
+  transition: background-color 0.3s;
+}
+
+.cartTab .cartBtn button:hover {
+  background-color: #d4a507;
+}
+
+.cartTab .cartBtn .cartClose {
+  background-color: #eee;
+  color: #333;
+}
+
+.cartTab .listCart {
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  scrollbar-width: none;
+}
+
+/* Estilos adicionales */
+.cartTab .listCart .listCartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #353432;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #eee;
+}
+
+.cartTab .listCart .listCartItem img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cartTab .listCart .listCartItem .name {
+  flex: 1;
+  font-size: 1rem;
+  margin-left: 10px;
+  color: #eee;
+  text-align: left;
+}
+
+.cartTab .listCart .listCartItem .totalPrice {
+  font-weight: bold;
+  color: #E8BC0E;
+  margin-right: 10px;
+}
+
+.cartTab .listCart .listCartItem .itemQuantity {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cartTab .listCart .listCartItem .itemQuantity span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #353432;
+  background-color: #E8BC0E;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartTab .listCart .listCartItem .itemQuantity span:hover {
+  background-color: #d4a507;
+}
+
+.cartTab .listCart .listCartItem .itemQuantity span:nth-child(2) {
+  width: auto;
+  background-color: transparent;
+  color: #eee;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: auto;
+}

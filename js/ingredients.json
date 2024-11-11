@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name":" Fajita de res",
+        "price": 15,
+        "image": "images/1.png"
+    },
+    {
+        "id": 2,
+        "name":" Frijoles",
+        "price": 5,
+        "image": "images/2.png"
+    },
+    {
+        "id": 3,
+        "name":" Chicharron prensado molido",
+        "price": 18,
+        "image": "images/3.png"
+    },
+    {
+        "id": 4,
+        "name":" Chile",
+        "price": 5,
+        "image": "images/4.png"
+    },
+    {
+        "id": 5,
+        "name":" Tomate",
+        "price": 5,
+        "image": "images/5.png"
+    },
+    {
+        "id": 6,
+        "name":" Cebolla",
+        "price": 5,
+        "image": "images/6.png"
+    },
+    {
+        "id": 7,
+        "name":" Mayonesa",
+        "price": 8,
+        "image": "images/7.png"
+    },
+    {
+        "id": 8,
+        "name":" Salchicha",
+        "price": 9,
+        "image": "images/8.png"
+    },
+    {
+        "id": 9,
+        "name":" Queso mozzarella",
+        "price": 11,
+        "image": "images/9.png"
+    },
+    {
+        "id": 10,
+        "name":" Queso americano",
+        "price": 10,
+        "image": "images/10.png"
+    },
+    {
+        "id": 11,
+        "name":" Aguacate",
+        "price": 10,
+        "image": "images/11.png"
+    },
+    {
+        "id": 12,
+        "name":" Jamon",
+        "price": 9,
+        "image": "images/12.png"
+    }
+
+]
